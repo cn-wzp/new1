@@ -1,0 +1,32 @@
+#div1 {
+    text-align: center;
+    background-color: #0a0013;
+}
+
+.count {
+    width: 300px;
+    height: 220px;
+    color: #9bb6f1;
+    font-size: 50px;
+    text-align: center;
+    background-color: #0a0013;
+    border: none;
+}
+
+.txt {
+    width: 120px;
+    height: 40px;
+    background-color: #b0b5c1;
+}
+
+#txt1 {
+    float: none;
+}
+
+#txt2 {
+    float: none;
+}
+
+#txt3 {
+    float: none;
+}

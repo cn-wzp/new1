@@ -1,0 +1,207 @@
+html, body, h3, h4,  p, a,img, dl, dt, ul, li{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	}/*全局*/
+body {
+	background:#f8f6f2;
+	min-width:1320px;
+}
+.header {
+	height:520px;
+	width:auto;
+	position:relative;
+}/*头部背景*/
+#header1{
+	background:url(..//img/header1.png);
+	background-position:center;
+}/*头部*/
+#strip {
+	position:absolute;
+	height:34px;
+	width:100%;
+	margin:0 auto;
+	bottom:0;
+	background:rgba(106, 106, 106, .3);
+}/*头部底纹*/
+#left{
+	margin:0 auto 0;
+	width:350px;
+	height:646px;
+	position:relative;
+	right:602px;
+	z-index:3;
+	margin-top:-270px;
+	background:rgba(31,52,61, .75);
+}/*左区域*/
+#left a{
+	color:#FFFFFF;
+	text-decoration:none;
+}/*字体颜色*/
+#box{
+	float: right;
+}/*盒模型*/
+#logo{
+	width:192px;
+	height:169px;
+	background:url(..//img/logo.png);
+	margin:24px 29px 0 0;
+}/*logo*/
+#nav{
+	margin-top:52px;
+	height:34px;
+	font-family: "微软雅黑";
+	color: #deeeed;
+	font-weight:bold;
+	background:url(..//img/tranger.fw.png);
+	background-position:98% 18%;
+	background-repeat:no-repeat;
+}/*底部标识*/
+#nav li{
+	vertical-align:middle;
+	font-size:10px;
+	padding-right:15px;
+	float:left;
+}/*li*/
+li{
+	list-style: none;
+	}
+#ifo{
+	text-align:right;
+	font-family: "微软雅黑";
+	color:#FFFFFF;
+}/*导航栏*/
+dt{
+	padding:8px;
+	font-size:14px;
+}/*导航文字区域*/
+#content{
+	width:855px;
+	margin: -376px auto 0;
+}/*容器*/
+.topic{
+	width:855px;
+}/*丹麦小框*/
+.theme{
+	width:161px;
+	height:112px;
+	background:#d1d1d1;
+	float:left;
+}
+.theme h3{
+	margin:18px 10px 5px 0;
+	text-align:right;
+	font-size: 18px;
+	font-family:"微软雅黑";
+	color:#525252;
+}
+.theme h4{
+	text-align:right;
+	margin-right:10px;
+	font-size:11px;
+	font-family:"华文细黑";
+	color:#865938;
+}/*正文标题*/
+.ideas{
+	width:659px;
+	margin:-112px auto auto 35px;
+	float:right;
+}/*正文*/
+.ideas p{
+	font-size:12px;
+	color:#545454;
+	margin-top:25px;
+	line-height:18px;
+	font-family:"宋体";
+}/*段落字体*/
+.title{
+	font-weight:14px;
+	font-family:"宋体";
+	color:#12657f;
+}/*标题*/
+#title_dan{
+	margin-top:16px;
+	background:url(..//img/happness.fw.png);
+	background-position:right;
+	background-repeat:no-repeat;
+}/*标题图*/
+#us_ifo{
+	width:659px;
+	margin:0 auto auto 35px;
+	float:right;
+}/*中下部分*/
+#us_ifo p{
+	font-size:12px;
+	color:#545454;
+	margin-top:50px;
+	line-height:18px;
+}/*段落文字*/
+#more{
+	width:659px;
+	margin-top:30px;
+}/*中下部分*/
+#more p{
+	width:192px;
+	margin-top:80px;
+	color:#12657f;
+	font-weight:12px;
+	float: left;
+}/*中下部分左边文字*/
+#more_img{
+	width:445px;
+	height:248px;
+	margin-left:5px;
+	background:url(..//img/more.fw.png);
+	float:left;
+}/*防癌图*/
+#footer{
+	height:93px;
+	width:auto;
+	margin-top:50px;
+	background:url(..//img/bgggg.fw.png);
+	background-position:center;
+	clear:both;
+}/*页尾*/
+#footer_box{
+	width:930px;
+	margin:0 auto;
+	position: relative;
+	left:25px;
+}/*盒模型*/
+#foot_logo{
+	width:192px;
+	height:92px;
+	float:left;
+	background:url(..//img/footer_logo.fw.png);
+}/*logo*/
+#addr{
+	margin-top:16px;
+	margin-left:20px;
+	font-size:12px;
+	line-height:20px;
+	font-family:"华文细黑" ;
+	color:#707070;
+	float:left;
+}/*文字设置*/
+#search{
+	margin-top:16px;
+	font-size:12px;
+	line-height:20px;
+	font-family:"微软雅黑";
+	color:#707070;
+	float:right;
+}/*地址文字*/
+#search input{
+	width:185px;
+	background:url(..//img/big.fw.png);
+	background-position:151px;
+	background-repeat:no-repeat;
+	background-color:#e6e6e6;
+	height:25px;
+	border:1px solid;
+	border-color:#b6b6b6;
+}/*搜索栏*/

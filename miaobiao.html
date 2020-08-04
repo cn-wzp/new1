@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet"  type="text/css"  href="css/miaobiao.css">
+    <script>
+        var second = 0;//秒
+        var minute = 0;//分ds
+        var mill = 0;//毫秒
+        var int;
+        function ks() {
+            window.clearInterval(int);
+            int = setInterval(timer, 50);
+        }
+        function timer()//计时
+        {
+            mill = mill+50;
+            if (mill >= 1000) {
+                mill = 0;
+                second = second + 1;
+            }
+            if (second >= 60) {
+                second = 0;
+                minute = minute + 1;
+            }
+            if (minute < 10) {
+                document.getElementById('time').value = "0" + minute + ":0" + second + ":0" + mill;
+                if (second < 10) {
+                    document.getElementById("time").value = "0" + minute + ":0" + second + ":0" + mill;
+                    if (mill < 10) {
+                        document.getElementById('time').value = "0" + minute + ":0" + second + ":0" + mill;
+                    }
+                    else {
+                        document.getElementById('time').value = "0" + minute + ":0" + second + ":" + mill;
+                    }
+                }
+                else {
+                    document.getElementById("time").value = "0" + minute + ":" + second + ":0" + mill;
+                }
+            }
+            else {
+                document.getElementById('time').value = minute + ":" + second + ":" + mill;
+                if (second < 10) {
+                    document.getElementById("time").value = minute + ":0" + second + ":0" + mill;
+                    if (mill < 10) {
+                        document.getElementById('time').value = minute + ":0" + second + ":0" + mill;
+                    }
+                    else {
+                        document.getElementById('time').value = minute + ":0" + second + ":" + mill;
+                    }
+                }
+                else {
+                    document.getElementById("time").value = minute + ":" + second + ":0" + mill;
+                }
+            }
+        }
+        function zt() {
+            window.clearInterval(int);
+        }
+        function cz() {
+            window.clearInterval(int);
+            mill = second = minute = 0;
+            document.getElementById('time').value = '00:00:000';
+        }  
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <input type="text" id="time" value='00:00:00' class="count">
+        <div>
+            <input class="txt" onclick="ks()" type="button" id="txt1" value="start" />
+            <input class="txt" onclick="zt()" type="button" id="txt2" value="stop" />
+            <input class="txt" onclick="cz()" type="button" id="txt3" value="reset" />
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(244,245,245);
+    width: 1300px;
+    height: auto;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    left: 20px;
+    margin:30px;
+}
+textarea{
+    margin-left: auto;
+    width: 600px;
+    height: 150px;
+    line-height: 1.5;
+    color: red;
+    font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+h1,h2,h3,h4{
+    margin-left: 18px;
+    color: brown;
+}

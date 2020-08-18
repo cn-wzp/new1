@@ -8,7 +8,7 @@
     <title>My LANDING PaGE</title>
 </head>
 
-<body class>
+<body>
     <nav>
         <div class="logo">
             <img src="img/milogo.png" alt="user">
@@ -22,9 +22,7 @@
     </nav>
     <header>
         <button id="toggle" class="toggle">
-            <i class="fa fa-bars fa-2x">
-                
-            </i>
+            <i class="fa iconfont  fa-2x">&#xe64f;</i>
         </button>
         <h1>My Landing Page</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, amet!</p>
@@ -55,6 +53,39 @@
             iste, culpa quaerat consequatur?
         </p>
     </div>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                    <i class = "fa iconfont ">&#xe651;</i>
+                </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with us to get offers, support and more</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" placeholder="Enter password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password2">Confirm Password</label>
+                        <input type="text" id="password2" placeholder="Enter password" class="form-input">
+                    </div>
+                    <input type="submit" value="Submit" id="sumbit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/Landing page.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@ function huansuan() {
             rate.innerText = `1 ${one} = ${bilv} ${two}`;
             money_two.value = (money_one.value * bilv).toFixed(2);
         });
+
 }
 country_one.addEventListener('click', huansuan);
 money_one.addEventListener('input', huansuan);

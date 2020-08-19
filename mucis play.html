@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/music play.css">
     <title>Music Player</title>
 </head>
 
@@ -16,22 +17,23 @@
                 <div class="progress" id="progress"></div>
             </div>
         </div>
-        <audio src="" id="audio"></audio>
+        <audio src="music/a.mp3" id="audio"></audio>
         <div class="img-container">
-            <img src="img/book5.png" alt="music-cover" id="cover">
+            <img src="..//HTML/music/a.png" alt="music-cover" id="cover">
         </div>
         <div class="navigation">
             <button id="prev" class="action-btn">
-                <i class="iconfont"></i>
+                <i class="iconfont">&#xe636;</i>
             </button>
             <button id="play" class="action-btn action-btn-big">
-                <i class="iconfont"></i>
+                <i class="iconfont">&#xe645;</i>
             </button>
             <button id="next" class="action-btn">
-                <i class="iconfont"></i>
+                <i class="iconfont">&#xe637;</i>
             </button>
         </div>
     </div>
+    <script src="js/music.js"></script>
 </body>
 
 </html>

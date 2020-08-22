@@ -118,6 +118,7 @@ header h1 {
 
 header p {
     margin: 30px 0;
+    word-break: break-word;
 }
 
 button,

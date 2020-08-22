@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+
+.settings-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.settings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.settings.hide {
+    transform: translateY(-100%);
+}
+
+.seetings-form {
+    box-sizing: border-box;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background-color: #a7c5e3;
+}
+
+select:focus,
+button:focus {
+    outline: 0;
+}
+
+.container {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: relative;
+    text-align: center;
+    width: 500px;
+}
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 0 40px;
+}
+
+h1 {
+    margin: 00;
+}
+
+input {
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 300px;
+    padding: 12px 12px;
+    margin-top: 10px;
+}
+
+.time-container {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.score-container {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+.end-game-container {
+    background-color: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot?t=1597901030867');
+    /* IE9 */
+    src: url('iconfont.eot?t=1597901030867#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMsAAsAAAAABuQAAALdAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBcIFtATYCJAMICwYABCAFhG0HMBsTBsiuMG7hSRdm6b11l7IuFVebtFEP62HcEEG0hs7eXRAVoowi0IA2Luwiy7KqFR5QtcLUGCDPwrTqB7aNsDaLca16+ojr2NDL6BdZY2Yufb5aOn0erbW5V9gjepuQ3iJiWs9mz9ZepUQ6qRJJmeweY477nCmOP3VIl2O9XmD8THVwTf1fY4HkAc0pozgScGDTAXbhmmwDGYBvGLvgBZ4n0GiABrh1fPkIcwp7WiCu49CFuYJfUViqXqhtWFvEY1SfHqYP4FH0/firFgqSmsyu2D09CmD3B+Zk5PtVxAKEYDkr2CYy5gAKcdgY35YVjAZrjOeMAI5VGvw4rKrAKI7654ladnEz6IP8ZxJ4wkctTqAk/dvAxaS9SBsLt9i7lZf2aPm5tVx8vGEhsp7fGCw9HQ0s9xJwf9t+u1xBhhnNzcrLlYTI6sHt8fLzxWzn31jWg9fOh4c/vfL53Y9P8T/cX7OLcuRbxz9FK4I43imQ0C/y/0g5W2kaIZnONy/Rs9o2eJ8MtAXqZqF1pPjCSCyLa6w9pIMqXttmcS/lnS+xKBdK9iAXcrPJsAtQPX9mf/Jv9D3J7ydtS89RwPdg+hd5qxcY5gT1t+IIfqlgYFsxRLYhFU3QKE1YMMmagFzuUsF2d/pOVffcfzrU63kLZ53+DLJ6Y2jBz0GNJvNQq94qNJpFbm7SxSMrSgNmJAGEdhNIWr2HrN0dLfgP1Oj1h1rtAUOj4+jas8lEiGyzQW6LAqTCKNJacdfUYnHpPYVt4Tbyooj+TI1mHEJjqVJOnZCixhILvIGw5vNx5DxaIgEuIyE0ujw6Ib9VEnwts64v86Y3lWinBGZTA3G1kACi9CGRT1N40LuFVT5/j4TaBFejo6rO+Yw0NMWDIyMdwwD0RK4GVT3KNV4doRqfFg5xGjQJEWAUEQQNuZpHJYivpUSYEDXW6Z1u3FB5aXul/IE8VoetSeEMy2pvIhpEMQAAAAA=') format('woff2'), url('iconfont.woff?t=1597901030867') format('woff'), url('iconfont.ttf?t=1597901030867') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1597901030867#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

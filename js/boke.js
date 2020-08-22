@@ -56,4 +56,4 @@ window.addEventListener('scroll', () => {
         shuaxin();
     }
 });
-filter.addEventListener('input', filter);
+filter.addEventListener('input', neirong);

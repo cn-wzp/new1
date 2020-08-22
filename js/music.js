@@ -36,13 +36,13 @@ function kaiguantubiao() {
 }*/
 function play() {
     container.classList.add('play');
-    play.innerHTML = '<i class="iconfont">&#xe615;</i>';
+    playBtn.innerHTML = '<i class="iconfont">&#xe615;</i>';
     audio.play();
 }
 
 function pause() {
     container.classList.remove('play');
-    play.innerHTML = '<i class="iconfont">&#xe645;</i>';
+    playBtn.innerHTML = '<i class="iconfont">&#xe645;</i>';
     audio.pause();
 }
 

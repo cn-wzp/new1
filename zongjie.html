@@ -3007,9 +3007,40 @@
                 <li>在SpeechSynthesisUtterance该界面的Web Speech API的代表发言请求。它包含语音服务应阅读的内容以及有关如何阅读的信息（例如语言，音调和音量）。</li>
                 <li>createElement() 方法通过指定名称创建一个元素</li>
                 <li>reload()方法用于刷新当前文档。 reload() 方法类似于你浏览器上的刷新页面按钮。</li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>push() pop() shift() unshift() splice() sort() reverse() 你可以打开控制台，然后对前面例子的 items 数组尝试调用变更方法。比如 example1.items.push({ message: 'Baz' })。</li>
+                <li>getAttribute() 方法返回指定属性名的属性值。</li>
+                <li>closest() 方法获得匹配选择器的第一个祖先元素，从当前元素开始沿 DOM 树向上。</li>
+                <li>setAttribute() 方法添加指定的属性，并为其赋指定的值。</li>
+                <li>reload() 方法用于重新加载当前文档。</li>
+                <textarea>
+                                    <!-- 阻止单击事件继续传播 -->
+                <a v-on:click.stop="doThis"></a>
+
+                <!-- 提交事件不再重载页面 -->
+                <form v-on:submit.prevent="onSubmit"></form>
+
+                <!-- 修饰符可以串联 -->
+                <a v-on:click.stop.prevent="doThat"></a>
+
+                <!-- 只有修饰符 -->
+                <form v-on:submit.prevent></form>
+
+                <!-- 添加事件监听器时使用事件捕获模式 -->
+                <!-- 即内部元素触发的事件先在此处理，然后才交由内部元素进行处理 -->
+                <div v-on:click.capture="doThis">...</div>
+
+                <!-- 只当在 event.target 是当前元素自身时触发处理函数 -->
+                <!-- 即事件不是从内部元素触发的 -->
+                <div v-on:click.self="doThat">...</div>
+                </textarea>
+                <li>v-enter：定义进入过渡的开始状态。在元素被插入之前生效，在元素被插入之后的下一帧移除。<br> v-enter-active：定义进入过渡生效时的状态。在整个进入过渡的阶段中应用，在元素被插入之前生效，在过渡/动画完成之后移除。这个类可以被用来定义进入过渡的过程时间，延迟和曲线函数。
+
+                    <br> v-enter-to：2.1.8 版及以上定义进入过渡的结束状态。在元素被插入之后下一帧生效 (与此同时 v-enter 被移除)，在过渡/动画完成之后移除。<br> v-leave：定义离开过渡的开始状态。在离开过渡被触发时立刻生效，下一帧被移除。
+
+                    <br> v-leave-active：定义离开过渡生效时的状态。在整个离开过渡的阶段中应用，在离开过渡被触发时立刻生效，在过渡/动画完成之后移除。这个类可以被用来定义离开过渡的过程时间，延迟和曲线函数。
+
+                    <br> v-leave-to：2.1.8 版及以上定义离开过渡的结束状态。在离开过渡被触发之后下一帧生效 (与此同时 v-leave 被删除)，在过渡/动画完成之后移除。</li>
+                <li>result 属性包含由被指定事件触发的事件处理器返回的最后一个值，除非这个值未定义。</li>
                 <li></li>
                 <li></li>
                 <li></li>

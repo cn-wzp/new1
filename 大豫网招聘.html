@@ -1,456 +1,472 @@
 <!DOCTYPE html>
 <html>
 <style>
-html, body,div, h1, h2, h3, h4, p, img {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    border: 0;
-    outline: 0;
-    background: transparent;
-}
-body{
-    background: #dce8f5;
-    min-width: 1600px;
-    min-height: 2000px;
-}
-.header{
-    height: 284px;
-    width: auto;
-    position: relative;
-}
-#header1{
-    background-image: url(..//大豫网/image/header.png);
-    background-position:center;
-}
-.left{
-    width: 314px;
-    height: 200px;
-    position: relative;
-}
-#left_box{
-    background: url("..//大豫网/image/tuceng.png");
-    margin: 0 0;
-    width:295px;
-    height: 169px;
-    margin:-5px 0px  0px 315px ;
-}
-.title{	
-    width:659px;
-	margin:-160px 330px auto 0px;
-	float:right;
-}
-.title p{
-    color: #333333;
-    font-family: "微软雅黑";
-    font-size: 15px;
-    line-height:30px;
-}
-.more{
-    width: auto;
-    height:350px;
-    margin-top: 80px;
-    display: inline-block;
-    margin-left: 315px;
-}
-#more_img{ 
-    background-color:#1c75bd;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    width: 110px;
-    height:110px;
-    float: left;
-    margin-left: 57px;
-    background-position:center;
-    ;
-}
-#more_h{
-    background-position:center;
-    margin-top: 32px;
-    margin-left: 24px;
-    color:#ffffff;
-    font-size: 30px;
-    font-family: "微软雅黑";
-}
-#more_p{
-    width: 150px;
-    height:250px;
-    float: left;
-    margin-left: -13px;
-    margin-top: 60px;
-    font-size: 14px;
-    font-family: "微软雅黑";
-}
-.ideas{
-    height: 480px;
-    width: 1050px;
-    margin-left: 315px;
-}
-#h1{
-    font-size: 32px;
-    color: #1c75bd;
-    font-family: "微软雅黑";
-    margin-left: 52px;
-
-}
-#ideas_box1{
-    width: 105px;
-    height: 168px;
-    margin-left: 32px;
-    margin-top: 8px;
-    background-color: #7ea2ce;
-    position:absolute;
-}
-#h2{
-    font-size: 18px;
-    color:#ffffff;
-    font-family: "微软雅黑";
-    text-align: center;
-    margin-top: 74px;
-    margin-left: 17px;
-    width: 72px;
-    height: 16px;
-    position:absolute;
-}
-.ideas_duanluo1{
-    width: 570px;
-    height: 168px;
-    margin-left: 106px;
-    background-color: #e9eef4;
-    position:absolute;
-}
-.ideas_duanluo1 p1{
-    width: 496px;
-    height:78px;
-    float: left;
-    margin-left: 34px;
-    margin-top: 43px;
-    font-size: 16px;
-    font-family: "微软雅黑";
-}
-.ideas_duanluo2{
-    width: 304px;
-    height: 168px;
-    margin-left:696px;
-    background-color: #e9eef4;
-}
-.ideas_duanluo2 p2{
-    width: 150px;
-    height:250px;
-    float: left;
-    margin-left: 44px;
-    margin-top: 25px;
-    font-size: 14px;
-    font-family: "微软雅黑";
-    position:absolute;
-}
-#ideas_box2{
-    width: 106px;
-    height: 84px;
-    margin-left: 31px;
-    margin-top: 212px;
-    background-color: #ceaa70;
-}
-#h3{
-    font-size: 18px;
-    color:#ffffff;
-    font-family: "微软雅黑";
-    text-align: center;
-    margin-top: 33px;
-    margin-left: 17px;
-    width: 72px;
-    height: 16px;
-    position:absolute;
-}
-.ideas_duanluo3{
-    width: 570px;
-    height: 84px;
-    margin-left: 106px;
-    background-color: #e9eef4;
-    position:absolute;
-}
-.ideas_duanluo3 p3{
-    width: 496px;
-    height:78px;
-    float: left;
-    margin-left: 34px;
-    margin-top: 35px;
-    font-size: 16px;
-    font-family: "微软雅黑";
-    position:absolute;
-}
-.ideas_duanluo4{
-    width: 304px;
-    height: 210px;
-    margin-left:696px;
-    background-color: #e9eef4;
-}
-.ideas_duanluo4 p4{
-    width: 150px;
-    height:250px;
-    float: left;
-    margin-left: 44px;
-    margin-top: 32px;
-    font-size: 14px;
-    font-family: "微软雅黑";
-    position:absolute;
-}
-#ideas_box3{
-    width: 106px;
-    height: 115px;
-    margin-left: 31px;
-    margin-top: 10px;
-    background-color: #ceaa70;
-}
-#h4{
-    font-size: 18px;
-    color:#ffffff;
-    font-family: "微软雅黑";
-    text-align: center;
-    margin-top: 36px;
-    margin-left: 17px;
-    width: 72px;
-    height: 42px;
-    position:absolute;
-}
-.ideas_duanluo5{
-    width: 570px;
-    height: 115px;
-    margin-left: 137px;
-    margin-top: -115px;
-    background-color: #e9eef4;
-    position:absolute;
-}
-.ideas_duanluo5 p5{
-    width: 496px;
-    height:78px;
-    float: left;
-    margin-left: 34px;
-    margin-top: 43px;
-    font-size: 16px;
-    font-family: "微软雅黑";
-}
-.center_box{
-    height: 672px;
-    width: 1050px;
-    margin-left: 315px;
-}
-.center-duanluo1{
-    width: 1050px;
-    height: 560px;
-    background-color: #e9eef4;
-    margin-left: 31px;
-    margin-top: 20px;
-}
-.center-duanluo1 p{
-    width: 426px;
-    height: 466px;
-    margin-top: 20px;
-    margin-left: 60px;
-    position:absolute;
-    color: #1c75bd; 
-    font-weight: bold;
-    font-size: 16px;
-    font-family: "微软雅黑";
-}
-.center-duanluo1 p1{
-    width: 426px;
-    height: 466px;
-    margin-top: 43px;
-    margin-left: 60px;
-    position:absolute;
-    color: #1c75bd; 
-    font-size: 14px;
-    font-family: "微软雅黑";
-}
-.center-duanluo1 p2{
-    margin-top: 83px;
-    margin-left: 75px;
-    position:absolute;
-    color: #333333; 
-    font-size: 14px;
-    font-family: "微软雅黑";
-}
-.center-duanluo1 p3{
-    margin-top: 203px;
-    margin-left: 60px;
-    position:absolute;
-    color: #1c75bd; 
-    font-size: 14px;
-    font-family: "微软雅黑";
-}
-.center-duanluo1 p4{
-    margin-top: 243px;
-    margin-left: 75px;
-    position:absolute;
-    color: #333333; 
-    font-size: 14px;
-    font-family: "微软雅黑";
-}    
-.tail_box{
-    height:290px;
-    width: 1050px;
-    margin-left: 315px;
-}
-.tail-duanluo1{
-    width: 1050px;
-    height: 100px;
-    background-color: #e9eef4;
-    margin-left: 31px;
-    margin-top: 20px;
-}
-.tail-duanluo1 p{
-    margin-top: 28px;
-    margin-left: 60px;
-    position:absolute;
-    color: #333333; 
-    font-size: 14px;
-    font-family: "微软雅黑";
-}
+    html,
+    body,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    img {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        border: 0;
+        outline: 0;
+        background: transparent;
+    }
+    
+    body {
+        background: #dce8f5;
+        box-sizing: border-box;
+    }
+    
+    .header {
+        height: 284px;
+        width: auto;
+        position: relative;
+    }
+    
+    #header1 {
+        background-image: url(img/header.png);
+        background-position: center;
+    }
+    
+    .left {
+        width: 314px;
+        height: 200px;
+    }
+    
+    #left_box {
+        background: url("img/headerdown.png");
+        width: 217px;
+        height: 130px;
+        margin: 0px 0px 0px 318px;
+    }
+    
+    .title {
+        width: 659px;
+        margin: -160px 330px auto 0px;
+        float: right;
+    }
+    
+    .title p {
+        color: #333333;
+        font-family: "微软雅黑";
+        font-size: 15px;
+        line-height: 30px;
+    }
+    
+    .more {
+        width: auto;
+        height: 350px;
+        margin-top: 80px;
+        display: inline-block;
+        margin-left: 315px;
+    }
+    
+    #more_img {
+        background-color: #1c75bd;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        float: left;
+        margin-left: 57px;
+        background-position: center;
+        ;
+    }
+    
+    #more_h {
+        background-position: center;
+        margin-top: 32px;
+        margin-left: 24px;
+        color: #ffffff;
+        font-size: 30px;
+        font-family: "微软雅黑";
+    }
+    
+    #more_p {
+        width: 150px;
+        height: 250px;
+        float: left;
+        margin-left: -13px;
+        margin-top: 60px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
+    
+    .ideas {
+        height: 480px;
+        width: 1050px;
+        margin-left: 315px;
+    }
+    
+    #h1 {
+        font-size: 32px;
+        color: #1c75bd;
+        font-family: "微软雅黑";
+        margin-left: 52px;
+    }
+    
+    #ideas_box1 {
+        width: 105px;
+        height: 168px;
+        margin-left: 32px;
+        margin-top: 8px;
+        background-color: #7ea2ce;
+        position: absolute;
+    }
+    
+    #h2 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "微软雅黑";
+        text-align: center;
+        margin-top: 74px;
+        margin-left: 17px;
+        width: 72px;
+        height: 16px;
+        position: absolute;
+    }
+    
+    .ideas_duanluo1 {
+        width: 570px;
+        height: 168px;
+        margin-left: 106px;
+        background-color: #e9eef4;
+        position: absolute;
+    }
+    
+    .ideas_duanluo1 p1 {
+        width: 496px;
+        height: 78px;
+        float: left;
+        margin-left: 34px;
+        margin-top: 43px;
+        font-size: 16px;
+        font-family: "微软雅黑";
+    }
+    
+    .ideas_duanluo2 {
+        width: 304px;
+        height: 168px;
+        margin-left: 696px;
+        background-color: #e9eef4;
+    }
+    
+    .ideas_duanluo2 p2 {
+        width: 150px;
+        height: 250px;
+        float: left;
+        margin-left: 44px;
+        margin-top: 25px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        position: absolute;
+    }
+    
+    #ideas_box2 {
+        width: 106px;
+        height: 84px;
+        margin-left: 31px;
+        margin-top: 212px;
+        background-color: #ceaa70;
+    }
+    
+    #h3 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "微软雅黑";
+        text-align: center;
+        margin-top: 33px;
+        margin-left: 17px;
+        width: 72px;
+        height: 16px;
+        position: absolute;
+    }
+    
+    .ideas_duanluo3 {
+        width: 570px;
+        height: 84px;
+        margin-left: 106px;
+        background-color: #e9eef4;
+        position: absolute;
+    }
+    
+    .ideas_duanluo3 p3 {
+        width: 496px;
+        height: 78px;
+        float: left;
+        margin-left: 34px;
+        margin-top: 35px;
+        font-size: 16px;
+        font-family: "微软雅黑";
+        position: absolute;
+    }
+    
+    .ideas_duanluo4 {
+        width: 304px;
+        height: 210px;
+        margin-left: 696px;
+        background-color: #e9eef4;
+    }
+    
+    .ideas_duanluo4 p4 {
+        width: 150px;
+        height: 250px;
+        float: left;
+        margin-left: 44px;
+        margin-top: 32px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        position: absolute;
+    }
+    
+    #ideas_box3 {
+        width: 106px;
+        height: 115px;
+        margin-left: 31px;
+        margin-top: 10px;
+        background-color: #ceaa70;
+    }
+    
+    #h4 {
+        font-size: 18px;
+        color: #ffffff;
+        font-family: "微软雅黑";
+        text-align: center;
+        margin-top: 36px;
+        margin-left: 17px;
+        width: 72px;
+        height: 42px;
+        position: absolute;
+    }
+    
+    .ideas_duanluo5 {
+        width: 570px;
+        height: 115px;
+        margin-left: 137px;
+        margin-top: -115px;
+        background-color: #e9eef4;
+        position: absolute;
+    }
+    
+    .ideas_duanluo5 p5 {
+        width: 496px;
+        height: 78px;
+        float: left;
+        margin-left: 34px;
+        margin-top: 43px;
+        font-size: 16px;
+        font-family: "微软雅黑";
+    }
+    
+    .center_box {
+        height: 672px;
+        width: 1050px;
+        margin-left: 315px;
+    }
+    
+    .center-duanluo1 {
+        width: 1050px;
+        height: 560px;
+        background-color: #e9eef4;
+        margin-left: 31px;
+        margin-top: 20px;
+    }
+    
+    .center-duanluo1 p {
+        width: 426px;
+        height: 466px;
+        margin-top: 20px;
+        margin-left: 60px;
+        position: absolute;
+        color: #1c75bd;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "微软雅黑";
+    }
+    
+    .center-duanluo1 p1 {
+        width: 426px;
+        height: 466px;
+        margin-top: 43px;
+        margin-left: 60px;
+        position: absolute;
+        color: #1c75bd;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
+    
+    .center-duanluo1 p2 {
+        margin-top: 83px;
+        margin-left: 75px;
+        position: absolute;
+        color: #333333;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
+    
+    .center-duanluo1 p3 {
+        margin-top: 203px;
+        margin-left: 60px;
+        position: absolute;
+        color: #1c75bd;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
+    
+    .center-duanluo1 p4 {
+        margin-top: 243px;
+        margin-left: 75px;
+        position: absolute;
+        color: #333333;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
+    
+    .tail_box {
+        height: 290px;
+        width: 1050px;
+        margin-left: 315px;
+    }
+    
+    .tail-duanluo1 {
+        width: 1050px;
+        height: 100px;
+        background-color: #e9eef4;
+        margin-left: 31px;
+        margin-top: 20px;
+    }
+    
+    .tail-duanluo1 p {
+        margin-top: 28px;
+        margin-left: 60px;
+        position: absolute;
+        color: #333333;
+        font-size: 14px;
+        font-family: "微软雅黑";
+    }
 </style>
+
 <head>
 
-<title>大豫网招聘</title>
+    <title>大豫网招聘</title>
 </head>
+
 <body>
     <div class="header" id="header1"></div>
     <div class="left">
         <div id="left_box"></div>
     </div>
-    <div class="title" >
-        <p>　　腾讯·大豫网成立于2011年8月26日，是由腾讯科技（深圳）有限公司和河南日报报业集团联合
-            打造的河南第一网。</p>
-        <p>　　腾讯将以其强大的用户基础和品牌影响力，以其优秀的网络媒体运营经验和技术产品研发运营
-            能力，以其卓越的用户体验和人才理念，协同河南日报报业集团暨《大河报》社在本土最权威的公
-            信力、最广泛的社会影响力、卓越的媒体实力、斐然的商业能力共同服务于河南。</p>
+    <div class="title">
+        <p>　　腾讯·大豫网成立于2011年8月26日，是由腾讯科技（深圳）有限公司和河南日报报业集团联合 打造的河南第一网。
+        </p>
+        <p>　　腾讯将以其强大的用户基础和品牌影响力，以其优秀的网络媒体运营经验和技术产品研发运营 能力，以其卓越的用户体验和人才理念，协同河南日报报业集团暨《大河报》社在本土最权威的公 信力、最广泛的社会影响力、卓越的媒体实力、斐然的商业能力共同服务于河南。
+        </p>
     </div>
-    <div class="more" >
+    <div class="more">
         <div id="more_img">
-            <div  id="more_h">合法</div>
-            <p  id="more_p">必须是依法注册，具
-            有独立法人资格，具
-            备广告代理合法经营
-            权的单位。</p>
+            <div id="more_h">合法</div>
+            <p id="more_p">必须是依法注册，具 有独立法人资格，具 备广告代理合法经营 权的单位。
+            </p>
         </div>
         <div id="more_img">
-            <div  id="more_h">经验</div>
-            <p id="more_p">熟悉本地区和拟代理
-            行业的经济发展状
-            况，熟悉拟代理行业
-            广告业务特点和发展
-            趋势，具备丰富的广
-            告营销经验。</p>
+            <div id="more_h">经验</div>
+            <p id="more_p">熟悉本地区和拟代理 行业的经济发展状 况，熟悉拟代理行业 广告业务特点和发展 趋势，具备丰富的广 告营销经验。
+            </p>
         </div>
         <div id="more_img">
-            <div  id="more_h">资源</div>
-            <p id="more_p">市场开拓和市场驾驭
-            能力强，有行业客户
-            资源优势和较强的客
-            户服务能力。具备较
-            强的营销活动策划、
-            组织、执行能力。</p>
+            <div id="more_h">资源</div>
+            <p id="more_p">市场开拓和市场驾驭 能力强，有行业客户 资源优势和较强的客 户服务能力。具备较 强的营销活动策划、 组织、执行能力。
+            </p>
         </div>
         <div id="more_img">
-            <div  id="more_h">诚信</div>
-        <p id="more_p">具有良好的资信状况
-        和回款能力，能自主
-        承担本网广告代理所
-        必须的流动资金，能
-        一次性交纳所代理行
-        业的风险保证金；注
-        册资本在100万元以
-        上。</p>
+            <div id="more_h">诚信</div>
+            <p id="more_p">具有良好的资信状况 和回款能力，能自主 承担本网广告代理所 必须的流动资金，能 一次性交纳所代理行 业的风险保证金；注 册资本在100万元以 上。
+            </p>
         </div>
         <div id="more_img">
-            <div  id="more_h">规模</div>
-        <p id="more_p">拥有固定的办公场
-        所，办公场所营业面
-        积不得少于200平方
-        米，具备开展广告代
-        理业务的办公条件；
-        拥有具备一定专业水
-        平的市场策划人员、
-        广告销售人员的售后
-        服务人员。</p>
+            <div id="more_h">规模</div>
+            <p id="more_p">拥有固定的办公场 所，办公场所营业面 积不得少于200平方 米，具备开展广告代 理业务的办公条件； 拥有具备一定专业水 平的市场策划人员、 广告销售人员的售后 服务人员。
+            </p>
         </div>
         <div id="more_img">
-            <div  id="more_h">合作</div>
-            <p id="more_p">认同大豫网，接受我
-            公司关于合同任务、
-            合同保证金、代理费
-            和招募资格等各项要
-            求。</p>
+            <div id="more_h">合作</div>
+            <p id="more_p">认同大豫网，接受我 公司关于合同任务、 合同保证金、代理费 和招募资格等各项要 求。
+            </p>
         </div>
     </div>
     <div class="ideas">
         <h1 id="h1">招募项目</h1>
         <div id="ideas_box1">
             <h id="h2">行业代理</h>
-            <div class="ideas_duanluo1" >
-                <p1>家居、医疗、3C（含IT行业、家电行业）、汽车、运营商、餐饮娱乐、
-                    快消、金融、教育、旅游、商品流通（含百货卖场、时尚消费品）等行
-                    业广告代理。</p1>
+            <div class="ideas_duanluo1">
+                <p1>家居、医疗、3C（含IT行业、家电行业）、汽车、运营商、餐饮娱乐、 快消、金融、教育、旅游、商品流通（含百货卖场、时尚消费品）等行 业广告代理。
+                </p1>
+            </div>
+            <div class="ideas_duanluo2">
+                <p2>联系电话<br/> 朱先生：18637196688
+                    <br/> 谭先生：13637776316
+                    <br/> 孙先生：18638929887
+                    <br/> 郑先生：13513806161
+                </p2>
+            </div>
         </div>
-        <div class="ideas_duanluo2">
-            <p2>联系电话<br/>
-                朱先生：18637196688<br/>
-                谭先生：13637776316<br/>
-                孙先生：18638929887<br/>
-                郑先生：13513806161</p2>
-        </div> 
-    </div>
-    <div id="ideas_box2">
-        <h id="h3">行业经理</h>
-        <div class="ideas_duanluo3">
-            <p3>郑州房产</p3>
+        <div id="ideas_box2">
+            <h id="h3">行业经理</h>
+            <div class="ideas_duanluo3">
+                <p3>郑州房产</p3>
+            </div>
+            <div class="ideas_duanluo4">
+                <p4>联系电话<br/> 孙先生：18638929887
+                    <br/> 郑先生：13513806161
+                    <br/> 邮箱
+                    <br/> sunsun@qqdyw.net
+                    <br/> jackyzheng@qqdyw.net
+                </p4>
+            </div>
         </div>
-        <div class="ideas_duanluo4">
-            <p4>联系电话<br/>
-                孙先生：18638929887<br/>
-                郑先生：13513806161<br/>
-                邮箱<br/>
-                sunsun@qqdyw.net<br/>
-                jackyzheng@qqdyw.net</p4>
+        <div id="ideas_box3">
+            <h id="h4">地市房产加盟</h>
         </div>
-    </div>
-    <div id="ideas_box3">
-        <h id="h4">地市房产加盟</h>
-    </div>  
-    <div class="ideas_duanluo5">
-        <p5>焦作、平顶山、漯河、商丘、鹤壁、驻马店、周口、濮阳、三门峡、济<br/>
-            源等地市  …[点击详细]</p5>
-    </div>         
+        <div class="ideas_duanluo5">
+            <p5>焦作、平顶山、漯河、商丘、鹤壁、驻马店、周口、濮阳、三门峡、济<br/> 源等地市 …[点击详细]</p5>
+        </div>
     </div>
     <div class="center_box">
         <h1 id="h1">申报材料</h1>
         <div class="center-duanluo1">
             <p>申报材料应包含以下四部分内容：</p>
-            <p1>一、不少于900字的公司简介<br/>
-                二、工商手续和各类资质证明材料</p1>
-            <p2>    （一）具备广告业务的营业执照原件及复印件；<br/>
-                    （二）企业税务登记证复印件；<br/>
-                    （三）企业法人代表身份证复印件；<br/>
-                    （四）企业法人代码证复印件；<br/>
-                    （五）行业管理机构颁发的行业登记资质证书；<br/>
-                    （六）办公场所租房协议原件，若是自有房屋请附产权证复印件。</p2>
-            <p3>三、拟代理全行业市场分析<br/>
-                四、同腾讯·大豫网的具体合作计划</p3>
-            <p4>（一）拟代理行业市场开发计划；<br/>
-                （二）拟代理行业客户服务计划；<br/>
-                （三）拟代理行业营销活动计划；<br/>
-                （四）广告市场份额提升措施；<br/>
-                （五）腾讯·大豫网品牌宣传推广计划；<br/>
-                （六）广告款回款保证计划。</p4>
-            </div>
+            <p1>一、不少于900字的公司简介<br/> 二、工商手续和各类资质证明材料
+            </p1>
+            <p2> （一）具备广告业务的营业执照原件及复印件；<br/> （二）企业税务登记证复印件；
+                <br/> （三）企业法人代表身份证复印件；
+                <br/> （四）企业法人代码证复印件；
+                <br/> （五）行业管理机构颁发的行业登记资质证书；
+                <br/> （六）办公场所租房协议原件，若是自有房屋请附产权证复印件。
+            </p2>
+            <p3>三、拟代理全行业市场分析<br/> 四、同腾讯·大豫网的具体合作计划
+            </p3>
+            <p4>（一）拟代理行业市场开发计划；<br/> （二）拟代理行业客户服务计划；
+                <br/> （三）拟代理行业营销活动计划；
+                <br/> （四）广告市场份额提升措施；
+                <br/> （五）腾讯·大豫网品牌宣传推广计划；
+                <br/> （六）广告款回款保证计划。
+            </p4>
+        </div>
     </div>
     <div class="tail_box">
         <h1 id="h1">联系地址</h1>
         <div class="tail-duanluo1">
-        <p>地 址：郑州市高新区翠竹街6号863软件园11号楼4层、5层<br/>
-           邮 编：450000</p>
+            <p>地 址：郑州市高新区翠竹街6号863软件园11号楼4层、5层<br/> 邮 编：450000</p>
         </div>
     </div>
     </div>
 </body>
+
 </html>

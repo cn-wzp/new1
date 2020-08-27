@@ -1,63 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
+
 /* 图标 */
 
-.icon-gouwuche{
+.icon-gouwuche {
     color: #b0b0b0;
 }
-.fr li:hover .icon-gouwuche{
+
+.fr li:hover .icon-gouwuche {
     color: #FF6700;
 }
+
+
 /* 头部 */
-.header{
+
+.header {
     width: 100%;
     height: 40px;
     background-color: #333333;
     line-height: 40px;
     color: #b0b0b0;
     font-size: 12px;
-    
 }
-.wrap{
+
+.wrap {
     width: 1226px;
     margin: 0 auto;
     /* position: relative; */
 }
-.fl li{
+
+.fl li {
     float: left;
-    
 }
-.fr li{
+
+.fr li {
     float: right;
-   
 }
-span{
-    margin:0 6px ;
+
+span {
+    margin: 0 6px;
     color: #424242;
 }
-.fr li{
+
+.fr li {
     text-align: center;
 }
+
+
 /* 购物车 */
-.sp{
+
+.sp {
     width: 120px;
     height: 40px;
     background-color: #424242;
-    margin-left:30px ;
+    margin-left: 30px;
     position: relative;
 }
-.header li:hover{
+
+.header li:hover {
     color: #fff;
 }
-.sp:hover{
+
+.sp:hover {
     background-color: #fff;
     color: #FF6700;
 }
 
-.shp{
+.shp {
     position: absolute;
     top: 40px;
     right: 0px;
@@ -67,75 +80,92 @@ span{
     text-align: center;
     line-height: 100px;
     background-color: #fff;
-    box-shadow: 0px 0px 20px -6px #B0B0B0 ;
+    box-shadow: 0px 0px 20px -6px #B0B0B0;
     display: none;
     z-index: 2;
     /* transition: height .1s; */
 }
-.shp{
+
+.shp {
     font-size: 12px;
     color: #000;
 }
-.fr li div:hover .shp{
+
+.fr li div:hover .shp {
     display: block;
-   /* height: 100px; */
+    /* height: 100px; */
 }
+
+
 /* 导航 */
-.nav{
+
+.nav {
     height: 100px;
     width: 100%;
     margin: 0 auto;
     position: relative;
 }
-.logo{
+
+.logo {
     width: 55px;
     height: 55px;
     float: left;
-    margin-top:24px ;
+    margin-top: 24px;
     background-color: darkgoldenrod;
 }
-.n-nav{
+
+.n-nav {
     float: left;
-    margin-left:126px ;
+    margin-left: 126px;
     color: #333;
     font-size: 16px;
 }
-.n-nav li{
+
+.n-nav li {
     line-height: 100px;
-    padding:0 12px ;
+    padding: 0 12px;
     float: left;
 }
-.red:hover{
+
+.red:hover {
     color: red;
 }
+
+
 /* 搜索框 */
-.n-text{
+
+.n-text {
     width: 245px;
     height: 50px;
-    margin-top:24px ;
+    margin-top: 24px;
 }
+
 input[type="button"] {
     width: 50px;
     height: 50px;
     border: 1px solid #b0b0b0;
     float: right;
-    margin-top:24px ;
+    margin-top: 24px;
 }
-input[type="button"]:hover{
+
+input[type="button"]:hover {
     background-color: #FF6700;
     border: 1px solid #FF6700;
 }
-input{
+
+input {
     border: 1px solid gray;
     box-sizing: border-box;
     font-size: 12px;
     vertical-align: middle;
     outline: none
 }
-.n-input{
+
+.n-input {
     position: relative;
 }
-.n-input ul{
+
+.n-input ul {
     font-size: 16px;
     background-color: #fff;
     width: 245px;
@@ -144,83 +174,99 @@ input{
     border: 1px solid #000;
     position: absolute;
     top: 74px;
-    right:50px;
+    right: 50px;
     z-index: 4;
     display: none;
 }
-.n-input ul li{
+
+.n-input ul li {
     height: 24px;
     font-size: 12px;
     line-height: 24px;
-    padding-left:15px ;
-}
-.n-input ul li:hover{
-    background-color: rgb(212, 212, 212);
-}
-.n-text:focus{
-    border: 1px solid #FF6700;
-}
-.n-text:focus+input+ul{
-    border: 1px solid #FF6700;
-    display: block;
-    border-top:0 ;
+    padding-left: 15px;
 }
 
- input[type="text"]:focus+input{
+.n-input ul li:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.n-text:focus {
     border: 1px solid #FF6700;
-} 
-.n-input{
+}
+
+.n-text:focus+input+ul {
+    border: 1px solid #FF6700;
+    display: block;
+    border-top: 0;
+}
+
+input[type="text"]:focus+input {
+    border: 1px solid #FF6700;
+}
+
+.n-input {
     float: right;
 }
+
+
 /* 搜索框文字 */
-.n-input div{
+
+.n-input div {
     font-size: 12px;
     color: #757575;
-   
     position: absolute;
     top: 40px;
     right: 60px;
 }
-.n-input div span{
-    padding:0 7px;
-     background-color: #eee;
+
+.n-input div span {
+    padding: 0 7px;
+    background-color: #eee;
 }
-.n-input div span:hover{
+
+.n-input div span:hover {
     background-color: #FF6700;
     color: #fff;
 }
-.n-input input[type="text"]:focus+input+ul+div{
+
+.n-input input[type="text"]:focus+input+ul+div {
     display: none;
 }
+
+
 /* 导航栏隐藏菜单 */
-.none-nav{
+
+.none-nav {
     width: 100%;
     height: 250px;
     position: absolute;
     top: 100px;
     left: 0;
     background-color: #fff;
-    border-top:1px solid #b0b0b0 ;
+    border-top: 1px solid #b0b0b0;
     display: none;
-    box-shadow: 0px 0px 20px -6px #B0B0B0 ;
+    box-shadow: 0px 0px 20px -6px #B0B0B0;
     z-index: 2;
 }
-.none-nav ul{
+
+.none-nav ul {
     width: 1226px;
     margin: 0 auto;
-    
 }
-.n-nav li:hover .none-nav{
+
+.n-nav li:hover .none-nav {
     display: block;
     color: #000;
 }
-.none-nav img{
+
+.none-nav img {
     z-index: 4;
-    margin-top:40px ;
+    margin-top: 40px;
     width: 150px;
     height: 100px;
 }
-.none-nav li{
+
+.none-nav li {
     position: relative;
     top: 0;
     left: 50px;
@@ -228,16 +274,18 @@ input{
     height: 250px;
     width: 200px;
 }
-.none-nav li .p1{
-   position: absolute;
-   top: 120px;
-   left: 45px;
+
+.none-nav li .p1 {
+    position: absolute;
+    top: 120px;
+    left: 45px;
     font-size: 14px;
-   height: 20px;
-   width: 150px;
+    height: 20px;
+    width: 150px;
 }
-.p2{
-    position:absolute;
+
+.p2 {
+    position: absolute;
     top: 150px;
     left: 55px;
     font-size: 12px;
@@ -245,54 +293,66 @@ input{
     height: 20px;
     width: 150px;
 }
-.nav-border{
+
+.nav-border {
     position: absolute;
     top: 40px;
-    margin:0px 190px ;
+    margin: 0px 190px;
     width: 1px;
     height: 100px;
     background-color: #b0b0b0;
 }
+
+
 /* 大窗口 */
-.bodyer-box{
+
+.bodyer-box {
     width: 1226px;
     height: 460px;
-    margin:20px auto;
-    background-image:url(../img/banner.jpg) ;
-    background-size:100% 100%;
-    margin-top:0 ;
+    margin: 20px auto;
+    background-image: url(../img/banner.jpg);
+    background-size: 100% 100%;
+    margin-top: 0;
     position: relative;
 }
-.bodyer-color{
+
+.bodyer-color {
     width: 234px;
     height: 450px;
-    background-color:rgba(33, 33, 33, 0.8);
-    padding-top:10px ;
+    background-color: rgba(33, 33, 33, 0.8);
+    padding-top: 10px;
 }
-.bodyer-box li{
-    height: 44px;  
+
+.bodyer-box li {
+    height: 44px;
 }
-.bodyer-box li:hover{
-    background-color:#FF6700 ;
+
+.bodyer-box li:hover {
+    background-color: #FF6700;
 }
-.bodyer-box li p{
-    padding-left:35px ;
+
+.bodyer-box li p {
+    padding-left: 35px;
     line-height: 44px;
     font-size: 14px;
     color: #fff;
 }
-.ta{
-    margin-top:-30px ;
-    margin-right:30px ;
+
+.ta {
+    margin-top: -30px;
+    margin-right: 30px;
     width: 7px;
-    height:7px;
+    height: 7px;
     float: right;
     transform: rotate(45deg);
-    border-right:2px solid #fff ;
-    border-top:2px solid #fff ;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
 }
+
+
 /* 大窗口隐藏 */
-.bodyer-nav{
+
+.bodyer-nav {
     width: 992px;
     height: 460px;
     background-color: #fff;
@@ -300,76 +360,97 @@ input{
     top: 0px;
     left: 234px;
     display: none;
-    box-shadow: 0px 0px 20px -6px #B0B0B0 ;
+    box-shadow: 0px 0px 20px -6px #B0B0B0;
 }
-.bodyer-li:hover .bodyer-nav{
+
+.bodyer-li:hover .bodyer-nav {
     display: block;
 }
+
+
 /* 内容 */
-.bodyer-t{
-    margin-top:10px ;
+
+.bodyer-t {
+    margin-top: 10px;
 }
-.bodyer-t td{
+
+.bodyer-t td {
     width: 230px;
     height: 70px;
     float: left;
-    margin-top:10px ;
+    margin-top: 10px;
     font-size: 12px;
 }
-.bodyer-t img{
+
+.bodyer-t img {
     width: 60px;
     height: 40px;
     float: left;
 }
-.bodyer-t td p{
+
+.bodyer-t td p {
     color: #000;
     float: left;
     line-height: 30px;
-    padding-left:0px ;
+    padding-left: 0px;
 }
+
+
 /* 主体 */
+
+
 /* 第一块 */
-.body-a{
+
+.body-a {
     width: 1226px;
     background-color: aliceblue;
     vertical-align: top;
     font-size: 0;
     margin: 0 auto;
 }
-.box_left,.box_right{
+
+.box_left,
+.box_right {
     vertical-align: top;
 }
-.box_left{
+
+.box_left {
     width: 234px;
     height: 170px;
     background-color: #5F5750;
     display: inline-block;
 }
-.mi_left1{
+
+.mi_left1 {
     width: 76px;
     height: 82px;
     display: inline-block;
     font-size: 12px;
     text-align: center;
-    padding-top:20px ;  
+    padding-top: 20px;
     position: relative;
 }
+
+
 /* 边框 */
-.mi_left1 .hr{
+
+.mi_left1 .hr {
     width: 1px;
     height: 55px;
     background-color: rgba(176, 176, 176, 0.24);
     position: absolute;
     top: 20px;
 }
-.mi_left .hr{
+
+.mi_left .hr {
     width: 1px;
     height: 55px;
     background-color: rgba(176, 176, 176, 0.24);
     position: absolute;
     top: 0px;
 }
-.mi_left1 .lr{
+
+.mi_left1 .lr {
     width: 55px;
     height: 1px;
     background-color: rgba(176, 176, 176, 0.24);
@@ -378,92 +459,112 @@ input{
     left: 10px;
 }
 
-
-.mi_left{
+.mi_left {
     width: 76px;
     height: 82px;
     display: inline-block;
     font-size: 12px;
     text-align: center;
-    padding-top:0px ;  
+    padding-top: 0px;
     position: relative;
 }
-.i1,.i2,.i3,.i4,.i5,.i6{
+
+.i1,
+.i2,
+.i3,
+.i4,
+.i5,
+.i6 {
     display: inline-block;
-     width: 24px;
+    width: 24px;
     height: 24px;
-    padding-top:5px ;
-   
-}
-.i1{
-    background: url(..//img/mi.png) -6px -2px no-repeat;
-     background-size:120px 80px;
-}
-.i2{
-    background: url(..//img/mi.png) -43px -2px no-repeat;
-    background-size:120px 80px;
-}
-.i3{
-    background: url(..//img/mi.png) -85px -2px no-repeat;
-    background-size:120px 80px;
-}
-.i4{
-    background: url(..//img/mi.png) -6px -46px no-repeat;
-    background-size:120px 80px;
-}
-.i5{
-    background: url(..//img/mi.png) -43px -46px no-repeat;
-    background-size:120px 80px;
-}
-.i6{
-    background: url(..//img/mi.png) -84px -46px no-repeat;
-    background-size:120px 80px;
+    padding-top: 5px;
 }
 
-.text{
+.i1 {
+    background: url(..//img/mi.png) -6px -2px no-repeat;
+    background-size: 120px 80px;
+}
+
+.i2 {
+    background: url(..//img/mi.png) -43px -2px no-repeat;
+    background-size: 120px 80px;
+}
+
+.i3 {
+    background: url(..//img/mi.png) -85px -2px no-repeat;
+    background-size: 120px 80px;
+}
+
+.i4 {
+    background: url(..//img/mi.png) -6px -46px no-repeat;
+    background-size: 120px 80px;
+}
+
+.i5 {
+    background: url(..//img/mi.png) -43px -46px no-repeat;
+    background-size: 120px 80px;
+}
+
+.i6 {
+    background: url(..//img/mi.png) -84px -46px no-repeat;
+    background-size: 120px 80px;
+}
+
+.text {
     color: rgba(255, 255, 255, 0.603);
 }
-.box_right{
-    
+
+.box_right {
     display: inline-block;
 }
-.box_right1{
+
+.box_right1 {
     width: 316px;
     height: 170px;
     display: inline-block;
-    padding-left:14px ;
+    padding-left: 14px;
     font-size: 14px;
     box-shadow: 0px 0px 10px -6px #B0B0B0;
 }
-.body-a img{
+
+.body-a img {
     width: 316px;
     height: 170px;
 }
-.body-a .box_right1:hover{
+
+.body-a .box_right1:hover {
     transform: scale(1.02);
     transition: all 0.3s;
-    box-shadow: 0px 0px 20px 1px #B0B0B0 ;
+    box-shadow: 0px 0px 20px 1px #B0B0B0;
 }
-.body-a .text:hover{
+
+.body-a .text:hover {
     color: #fff;
 }
+
+
 /* 小米闪购 */
-.Body{
+
+.Body {
     background-color: #F5F5F5;
 }
-.mi-shopping{
+
+.mi-shopping {
     width: 1226px;
     height: 58px;
-    margin-top:30px ;
+    margin-top: 30px;
     position: relative;
 }
-.mi-shopping p{
+
+.mi-shopping p {
     font-size: 22px;
     color: #333;
     line-height: 58px;
 }
-.mi-shopping span{
-    display:block;
+
+.mi-shopping span {
+    display: block;
     width: 34px;
     height: 20px;
     border: 1px solid #b0b0b0;
@@ -472,226 +573,278 @@ input{
     text-align: center;
     margin: 0;
 }
-.mi-shopping .span{
+
+.mi-shopping .span {
     position: absolute;
     top: 20px;
     right: 0;
 }
-.mi-shopping .span .icon-jiantouyou:hover{
+
+.mi-shopping .span .icon-jiantouyou:hover {
     color: #FF6700;
 }
-.mi-shopping .span .icon-jiantouzuo:hover{
+
+.mi-shopping .span .icon-jiantouzuo:hover {
     color: #FF6700;
 }
+
+
 /* 商品 */
+
+
 /* .body-shopping{
     margin-bottom:30px ;
 } */
-.body-shopping div{
+
+.body-shopping div {
     width: 234px;
     height: 339px;
     float: left;
-
 }
-.body-shopping .shopping-a{
-    box-shadow: 0px 0px 20px -8px #B0B0B0 ;
-    background-color:#f1eded;
+
+.body-shopping .shopping-a {
+    box-shadow: 0px 0px 20px -8px #B0B0B0;
+    background-color: #f1eded;
     text-align: center;
 }
-.body-shopping .shopping-a p{
+
+.body-shopping .shopping-a p {
     font-size: 21px;
     color: #EF3A3B;
     margin-top: 60px;
 }
-.body-shopping .shopping-a img{
+
+.body-shopping .shopping-a img {
     width: 34px;
     height: 53px;
     margin-top: 30px;
 }
-.body-shopping .shopping-a .shopping-atext{
+
+.body-shopping .shopping-a .shopping-atext {
     color: rgba(0, 0, 0, .52);
     font-size: 15px;
     margin-top: 30px;
 }
-.body-shopping .shopping-a div{
-    margin-left:8px ;
+
+.body-shopping .shopping-a div {
+    margin-left: 8px;
 }
-.body-shopping .shopping-a .shopping-a1{
+
+.body-shopping .shopping-a .shopping-a1 {
     width: 46px;
     height: 46px;
     background-color: #605751;
-    margin-top:25px;
+    margin-top: 25px;
 }
-.shopping-a .shopping-atext+div{
+
+.shopping-a .shopping-atext+div {
     margin-left: 25px;
 }
-.body-shopping .shopping-a .shopping-a0{
+
+.body-shopping .shopping-a .shopping-a0 {
     width: 10px;
     height: 46px;
     font-size: 24px;
     margin-top: 25px;
 }
-.body-shopping .shopping-a div p{
+
+.body-shopping .shopping-a div p {
     font-size: 24px;
     color: #fff;
     margin-top: 5px;
 }
 
-.shopping{
-    margin-left:14px ;
+.shopping {
+    margin-left: 14px;
     text-align: center;
-    box-shadow: 0px 0px 20px -8px #B0B0B0 ;
-    background-color:#fff;
+    box-shadow: 0px 0px 20px -8px #B0B0B0;
+    background-color: #fff;
 }
+
+
 /* .shopping-a img{
     width: 100%;
     height: 100%;
 } */
-.shopping img{
+
+.shopping img {
     width: 160px;
     height: 160px;
-    margin-top:50px ;
+    margin-top: 50px;
 }
-.shopping .text{
+
+.shopping .text {
     width: 234px;
     height: 21px;
     font-size: 14px;
     color: #000;
     text-align: center;
-    margin-top:20px ;
+    margin-top: 20px;
 }
-.shopping .desc{
+
+.shopping .desc {
     width: 234px;
     height: 21px;
     font-size: 12px;
     color: #b0b0b0;
-    margin-top:10px ;
+    margin-top: 10px;
 }
-.shopping .price{
+
+.shopping .price {
     width: 234px;
     height: 21px;
     color: #ff6709;
     font-size: 14px;
-    margin-top:10px ;
+    margin-top: 10px;
 }
-.shopping .price del{
+
+.shopping .price del {
     color: #b0b0b0;
 }
-.body-shopping .shopping:hover{
-     transform: scale(1.02);
-    transition: all 0.3s;
-    box-shadow: 0px 0px 20px 1px #B0B0B0 ;
-}
-.body-shopping .shopping-a:hover{
+
+.body-shopping .shopping:hover {
     transform: scale(1.02);
-   transition: all 0.3s;
-   box-shadow: 0px 0px 20px 1px #B0B0B0 ;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 20px 1px #B0B0B0;
 }
-.shopping-a{
-    border-top:1px solid #0990ff;
+
+.body-shopping .shopping-a:hover {
+    transform: scale(1.02);
+    transition: all 0.3s;
+    box-shadow: 0px 0px 20px 1px #B0B0B0;
 }
-.shopping{
+
+.shopping-a {
+    border-top: 1px solid #0990ff;
+}
+
+.shopping {
     position: relative;
-    border-top:1px solid #ff6709;
+    border-top: 1px solid #ff6709;
     overflow: hidden;
 }
-.body-img1{
+
+.body-img1 {
     float: left;
-    margin-top:30px ;
-    margin-bottom:30px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+
 /* 过度动画 */
-.shopping .shopping-x{
+
+.shopping .shopping-x {
     width: 234px;
     height: 339px;
     background-color: rgba(0, 0, 0, .4);
     position: absolute;
     top: -339px;
 }
-.shopping div .shopping-xx{
+
+.shopping div .shopping-xx {
     width: 120px;
     height: 120px;
     background-color: #fff;
-    border-radius:50% ;
+    border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -60px;
-    margin-top:-60px ;
+    margin-top: -60px;
 }
-.shopping div .shopping-xx .icon-gouwuche{
+
+.shopping div .shopping-xx .icon-gouwuche {
     font-size: 60px;
     color: #FF6700;
     line-height: 120px;
 }
-.shopping:hover .shopping-x{
-    top:0px;
+
+.shopping:hover .shopping-x {
+    top: 0px;
     transition: all .4s;
 }
-.shopping div .shopping-xx:hover{
+
+.shopping div .shopping-xx:hover {
     background-color: #FF6700;
 }
-.shopping div .shopping-xx:hover .icon-gouwuche{
+
+.shopping div .shopping-xx:hover .icon-gouwuche {
     color: #fff;
 }
 
 
-
-
 /* 清除浮动 */
-.clearfix:after{
+
+.clearfix:after {
     content: ".";
     display: block;
     height: 0;
     clear: both;
     visibility: hidden;
 }
+
+
 /* 手机 */
-.body-phone{
+
+.body-phone {
     width: 1226px;
-    height: 58px;  
+    height: 58px;
     color: #333;
     float: left;
     font-size: 20px;
 }
-.phone-left{
+
+.phone-left {
     float: left;
 }
-.phone-nav{
+
+.phone-nav {
     color: #424242;
     font-size: 16px;
     float: right;
 }
-.phone-nav:hover{
+
+.phone-nav:hover {
     color: #ff6709;
 }
-.phone-nav:hover span{
+
+.phone-nav:hover span {
     color: #ff6709;
 }
+
+
 /*ALPHA */
-.body-phones{
+
+.body-phones {
     width: 1226px;
     margin: 0 auto;
     font-size: 0;
 }
-.phones_lift{
+
+.phones_lift {
     width: 234px;
     height: 614px;
 }
-.phones_right{
+
+.phones_right {
     width: 992px;
     height: 614px;
-   
 }
-.phones_lift,.phones_right{
+
+.phones_lift,
+.phones_right {
     display: inline-block;
-    vertical-align: top; /* 对其方式 */
-    font-size:"12px";
+    vertical-align: top;
+    /* 对其方式 */
+    font-size: "12px;
+
 }
-.phones_right ul{
+
+.phones_right ul {
     font-size: 0;
 }
-.phones_right li{
+
+.phones_right li {
     display: inline-block;
     text-align: center;
     font-size: 14px;
@@ -700,265 +853,309 @@ input{
     padding: 20px 0;
     margin-left: 14px;
     background-color: #fff;
-    box-shadow: 0px 0px 20px -8px #B0B0B0 ;
+    box-shadow: 0px 0px 20px -8px #B0B0B0;
 }
-.phones_right .next{
+
+.phones_right .next {
     padding-top: 34px;
 }
-.phones_right li img{
+
+.phones_right li img {
     width: 200px;
     height: 120px;
     margin: 10px 0;
 }
-.phones_right h3{
+
+.phones_right h3 {
     font-weight: normal;
 }
-.phones_right .text{
+
+.phones_right .text {
     font-size: 12px;
     margin: 10px 0;
-    color:  gray;    
+    color: gray;
 }
-.phones_right .price{
+
+.phones_right .price {
     color: red;
 }
-.phones_right .del{
+
+.phones_right .del {
     color: gray;
     text-decoration: line-through;
 }
-.phones_right li:hover{
-    
+
+.phones_right li:hover {
     transform: scale(1.02);
     transition: all 0.3s;
-    box-shadow: 0px 0px 20px 1px #B0B0B0 ;
+    box-shadow: 0px 0px 20px 1px #B0B0B0;
 }
-.phones_right .phones_lift:hover{
+
+.phones_right .phones_lift:hover {
     transform: scale(1.02);
     transition: all 0.3s;
-    box-shadow: 0px 0px 20px 1px #B0B0B0 ;
+    box-shadow: 0px 0px 20px 1px #B0B0B0;
 }
+
+
 /* 家电 */
-.body-img2{
+
+.body-img2 {
     float: left;
     margin: 30px 0 30px 0;
 }
-.body-jiadian{
+
+.body-jiadian {
     float: left;
     width: 1226px;
     height: 58px;
 }
-.body-jiadian p{
+
+.body-jiadian p {
     font-size: 20px;
     color: #333333;
 }
-.body-jiadian .jiadian-right{
+
+.body-jiadian .jiadian-right {
     font-size: 17px;
     float: right;
-    margin-left:20px ;
-    margin-top:-20px ;
+    margin-left: 20px;
+    margin-top: -20px;
 }
-.body-jiadian .jiadian-right:hover{
+
+.body-jiadian .jiadian-right:hover {
     color: #FF6700;
-    border-bottom:2px solid #FF6700 ;
+    border-bottom: 2px solid #FF6700;
 }
 
-
-
-
-.body-tv{
+.body-tv {
     width: 1226px;
     height: 300px;
     float: left;
     text-align: center;
 }
-.body-tv li{
+
+.body-tv li {
     width: 234px;
     height: 300px;
     float: left;
     background-color: #fff;
-    box-shadow: 0px 0px 20px -8px #B0B0B0 ;
+    box-shadow: 0px 0px 20px -8px #B0B0B0;
 }
-.body-tv .tv-top{
+
+.body-tv .tv-top {
     height: 300px;
     float: left;
     margin-left: 14px;
 }
-.body-tv .tv-top img{
-    padding-top:50px ;
+
+.body-tv .tv-top img {
+    padding-top: 50px;
 }
-.body-tv .tv-text{
+
+.body-tv .tv-text {
     font-size: 14px;
     color: #333;
-    margin-top:10px ;
+    margin-top: 10px;
 }
-.body-tv .tv-as{
+
+.body-tv .tv-as {
     font-size: 12px;
     color: #b0b0b0;
     margin-top: 10px;
 }
-.body-tv .tv-y{
+
+.body-tv .tv-y {
     font-size: 14px;
     color: #FF6700;
     margin-top: 14px;
 }
-.body-tv li:hover{
+
+.body-tv li:hover {
     transform: scale(1.02);
     transition: all 0.3s;
-    box-shadow: 0px 0px 20px 1px #B0B0B0 ;
+    box-shadow: 0px 0px 20px 1px #B0B0B0;
 }
+
+
 /* 下半部分 */
-.body-tvb{
+
+.body-tvb {
     width: 1226px;
     height: 300px;
     float: left;
     text-align: center;
-    margin-top:14px ;
+    margin-top: 14px;
     margin-bottom: 30px;
 }
-.body-tvb li{
+
+.body-tvb li {
     width: 234px;
     height: 300px;
     float: left;
     background-color: #fff;
-    box-shadow: 0px 0px 20px -8px #B0B0B0 ;
+    box-shadow: 0px 0px 20px -8px #B0B0B0;
 }
-.body-tvb .tv-bottm{
+
+.body-tvb .tv-bottm {
     height: 300px;
     float: left;
     margin-left: 14px;
 }
-.body-tvb .tv-bottm img{
-    padding-top:50px ;
+
+.body-tvb .tv-bottm img {
+    padding-top: 50px;
 }
-.body-tvb .tv-text{
+
+.body-tvb .tv-text {
     font-size: 14px;
     color: #333;
-    margin-top:10px ;
+    margin-top: 10px;
 }
-.body-tvb .tv-as{
+
+.body-tvb .tv-as {
     font-size: 12px;
     color: #b0b0b0;
     margin-top: 10px;
 }
-.body-tvb .tv-y{
+
+.body-tvb .tv-y {
     font-size: 14px;
     color: #FF6700;
     margin-top: 14px;
 }
-.body-tvb .tv-right1{
+
+.body-tvb .tv-right1 {
     width: 234px;
     height: 143px;
-    margin-left:14px ;
+    margin-left: 14px;
     background-color: #fff;
 }
-.body-tvb .tv-right1 img{
+
+.body-tvb .tv-right1 img {
     width: 80px;
     height: 80px;
     float: right;
-    margin: 30px 10px ;
+    margin: 30px 10px;
 }
-.body-tvb .tv-right1 .tv-text{
+
+.body-tvb .tv-right1 .tv-text {
     font-size: 14px;
     color: #333;
-    margin-top:30px ;
+    margin-top: 30px;
 }
-.body-tvb .tv-right2{
+
+.body-tvb .tv-right2 {
     width: 234px;
     height: 143px;
-    margin-left:14px ;
-    margin-top:14px ;
+    margin-left: 14px;
+    margin-top: 14px;
     background-color: #fff;
 }
-.body-tvb .tv-right2 .icon-changyongicon-{
+
+.body-tvb .tv-right2 .icon-changyongicon- {
     float: right;
     color: #ff6709;
     font-size: 48px;
     margin: 40px 20px;
 }
-.body-tvb .tv-right2 .right2-text{
+
+.body-tvb .tv-right2 .right2-text {
     font-size: 18px;
-    margin-top:40px ;
+    margin-top: 40px;
 }
-.body-tvb .tv-right2 .right3-text{
+
+.body-tvb .tv-right2 .right3-text {
     font-size: 12px;
-    margin-top:10px ;
-    margin-left:-30px ;
+    margin-top: 10px;
+    margin-left: -30px;
 }
 
-
-
-.body-tvb li:hover{
+.body-tvb li:hover {
     transform: scale(1.02);
     transition: all 0.3s;
-    box-shadow: 0px 0px 20px 1px #B0B0B0 ;
+    box-shadow: 0px 0px 20px 1px #B0B0B0;
 }
 
 
 /* 尾部 */
-.foot .foot-service{
+
+.foot .foot-service {
     width: 1226px;
     height: 80px;
-    border-bottom:1px solid #e0e0e0 ;
-    
+    border-bottom: 1px solid #e0e0e0;
 }
-.foot .foot-service li{
+
+.foot .foot-service li {
     float: left;
     font-size: 16px;
     color: #616161;
     text-align: center;
     line-height: 88px;
 }
-.foot .foot-service span{
+
+.foot .foot-service span {
     color: #e0e0e0;
     margin: 10px 50px;
 }
-.foot .foot-service .icon-weixiubanshou{
+
+.foot .foot-service .icon-weixiubanshou {
     color: #616161;
     font-size: 24px;
-    margin-right:10px ;
+    margin-right: 10px;
 }
-.foot .foot-service .icon-7tianwuliyoutuihuo{
+
+.foot .foot-service .icon-7tianwuliyoutuihuo {
     color: #616161;
     font-size: 24px;
-    margin-left:0px ;
-    margin-right:10px ;
+    margin-left: 0px;
+    margin-right: 10px;
 }
-.foot .foot-service .icon-15tianwuliyoutuihuo{
+
+.foot .foot-service .icon-15tianwuliyoutuihuo {
     color: #616161;
     font-size: 24px;
-    margin-left:0px ;
-    margin-right:10px ;
+    margin-left: 0px;
+    margin-right: 10px;
 }
-.foot .foot-service .icon-liwu{
+
+.foot .foot-service .icon-liwu {
     color: #616161;
     font-size: 24px;
-    margin-left:0px ;
-    margin-right:10px ;
+    margin-left: 0px;
+    margin-right: 10px;
 }
-.foot .foot-service .icon-buoumaotubiao23{
+
+.foot .foot-service .icon-buoumaotubiao23 {
     color: #616161;
     font-size: 24px;
-    margin-left:0px ;
-    margin-right:10px ;
+    margin-left: 0px;
+    margin-right: 10px;
 }
-.foot .foot-service li:hover{
-    color: #FF6700;
-}
-.foot .foot-service li:hover .iconfont{
+
+.foot .foot-service li:hover {
     color: #FF6700;
 }
 
+.foot .foot-service li:hover .iconfont {
+    color: #FF6700;
+}
+
+
 /* 尾部表格 */
-.foot-table .foot-tablep{
+
+.foot-table .foot-tablep {
     float: left;
     color: #424242;
     font-size: 14px;
     width: 960px;
     height: 18px;
     line-height: 18px;
-    margin-top:30px ;
-    margin-bottom:20px ;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
-.foot-table .foot-tableb{
+
+.foot-table .foot-tableb {
     float: left;
     color: #757575;
     font-size: 12px;
@@ -966,82 +1163,98 @@ input{
     height: 20px;
     line-height: 20px;
 }
-.foot-tableR{
+
+.foot-tableR {
     height: 80px;
     width: 240px;
     float: right;
-    margin-top:-30px ;
+    margin-top: -30px;
     text-align: center;
-    border-left:1px solid #e0e0e0 ;
+    border-left: 1px solid #e0e0e0;
 }
-.foot-tableR .foot-phone{
+
+.foot-tableR .foot-phone {
     color: #FF6700;
     font-size: 22px;
 }
-.foot-tableR .text{
+
+.foot-tableR .text {
     color: #616161;
     font-size: 12px;
 }
-.foot-tableR .foot-people{
+
+.foot-tableR .foot-people {
     color: #FF6700;
     font-size: 13px;
     line-height: 22px;
     margin: auto;
-    margin-top:20px ;
+    margin-top: 20px;
     width: 100px;
     height: 25px;
     border: 1px solid #FF6700;
 }
-.foot-tableR .foot-people:hover{
+
+.foot-tableR .foot-people:hover {
     color: #fff;
     background-color: #FF6700;
 }
-.foot-table .foot-tableb td:hover{
+
+.foot-table .foot-tableb td:hover {
     color: #FF6700;
-    
 }
-.foot-bottom{
+
+.foot-bottom {
     background-color: #f5f5f5;
     margin-top: 30px;
     height: 300px;
 }
+
+
 /* 最后 */
-.foot-bottom{
-    padding-top:30px ;
+
+.foot-bottom {
+    padding-top: 30px;
 }
-.bottom-logo{
+
+.bottom-logo {
     width: 57px;
     height: 57px;
     float: left;
-    margin-right:10px ;
-    margin-bottom:50px ;
+    margin-right: 10px;
+    margin-bottom: 50px;
 }
-.bottom-text1{
+
+.bottom-text1 {
     color: #757575;
     font-size: 12px;
 }
-.bottom-text2{
+
+.bottom-text2 {
     color: #b0b0b0;
     font-size: 12px;
 }
-.foot-bottom .v1{
+
+.foot-bottom .v1 {
     width: 85px;
     height: 28px;
 }
-.foot-bottom .simg{
-    margin:30px 40%;
+
+.foot-bottom .simg {
+    margin: 30px 40%;
 }
 
 
 /* 右导航栏 */
-.right-nav{
+
+.right-nav {
     position: fixed;
     right: 0px;
     top: 300px;
     text-align: center;
-    
 }
-.right-navp,.right-navb{
+
+.right-navp,
+.right-navb {
     width: 84px;
     height: 92px;
     background-color: #fff;
@@ -1050,31 +1263,45 @@ input{
     overflow: hidden;
     margin-bottom: 1px;
 }
-.right-nav .right-navp .iconfont{
+
+.right-nav .right-navp .iconfont {
     font-size: 30px;
     color: #757575;
     display: block;
-    margin-top:15px ;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
-.right-nav .right-navb .iconfont{
+
+.right-nav .right-navb .iconfont {
     font-size: 30px;
     color: #757575;
     display: block;
-    margin-top:15px ;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
-.right-nav .right-navb{
+
+.right-nav .right-navb {
     margin-top: 20px;
 }
-.right-nav div:hover{
+
+.right-nav div:hover {
     color: #FF6700;
 }
-.right-nav div:hover .iconfont{
+
+.right-nav div:hover .iconfont {
     color: #FF6700;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:link,a:visited{color:#757575;text-decoration:none;}
-a:hover{color:#FF6700;}
+
+a:link,
+a:visited {
+    color: #757575;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6700;
+}

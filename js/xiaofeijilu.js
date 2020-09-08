@@ -34,7 +34,10 @@ function jiluxiaofei(xiaofei) {
     const zhengfu = xiaofei.amount < 0 ? '-' : '+';
     const chuangjian = document.createElement('li');
     chuangjian.classList.add(xiaofei.amount < 0 ? 'minus' : 'plus');
-    chuangjian.innerHTML = `${xiaofei.text}<span>${zhengfu}${Math.abs(xiaofei.amount)}</span><button class="delete-btn"
+    chuangjian.innerHTML = `${xiaofei.text}
+    <span>${zhengfu}${Math.abs(xiaofei.amount)}
+    </span>
+    <button class="delete-btn"
     onclick="yichuchucun(${xiaofei.id})">x</button>`;
     list.appendChild(chuangjian);
 }

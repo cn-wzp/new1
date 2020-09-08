@@ -5,24 +5,25 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease;*/
 }
 
-body.show-nav {
-    transform: translateX(200px);
+.nav.show-nav {
+    transform: translateX(0px);
 }
 
-nav {
+.nav {
     background-color: #30336b;
     border-right: 2px solid rgba(200, 200, 200, 0.1);
     color: #fff;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 200px;
     height: 100vh;
     z-index: 100;
-    transform: translateX(-100%);
+    transform: translateX(-400px);
+    transition: transform 1s ease-in-out;
 }
 
 nav .logo {
@@ -129,6 +130,7 @@ input[type='submit'] {
     color: #fff;
     cursor: pointer;
     padding: 8px 12px;
+    z-index: 101;
 }
 
 .cta-btn {

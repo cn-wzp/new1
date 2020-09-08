@@ -14,7 +14,6 @@ function speaks(e) {
     const msg = e.results[0][0].transcript;
     neirong(msg);
 }
-
 function neirong(msg) {
     msg1.innerHTML = `
     <div>你说的是：</div>
@@ -30,7 +29,8 @@ function neirong(msg) {
     }
     if (num === randomnumber) {
         msg1.innerHTML = `<div>你猜对了！！</div>
-        <button class="play-again" id="play-again">重新开始</button>`;
+        <button class="play-again" id="play-again">
+        重新开始</button>`;
     }
     if (num < randomnumber) {
         msg1.innerHTML += `<div>太小了</div>`;

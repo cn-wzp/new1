@@ -72,8 +72,10 @@ prevBtn.addEventListener('click', () => {
     cardsarr[Activecard].className = "card active";
     gaibiancurrentText();
 });
-showBtn.addEventListener('click', () => addContainer.classList.add('show'));
-hideBtn.addEventListener('click', () => addContainer.classList.remove('show'));
+showBtn.addEventListener('click', () => 
+addContainer.classList.add('show'));
+hideBtn.addEventListener('click', () => 
+addContainer.classList.remove('show'));
 clearBtn.addEventListener('click', () => {
     localStorage.clear();
     cardsContainer.innerHTML = "";
